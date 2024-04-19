@@ -1,5 +1,8 @@
 
-import { addRoomateQuery } from "../queries/roommatesQueries.js"
+import {
+  addRoomateQuery,
+  getRoommatesQuery,
+} from "../queries/roommatesQueries.js";
 import path from "path";
 const __dirname = import.meta.dirname;
 
@@ -18,4 +21,14 @@ const addRoommate = async (req, res) => {
     }
 }
 
-export { home, addRoommate }
+const getRoomates = async (req, res) => {
+    try {
+        const roommatesJson = await getRoommatesQuery();
+        res.json(roommatesJson)
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+export { home, addRoommate, getRoomates }

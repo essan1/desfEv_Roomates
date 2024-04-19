@@ -27,7 +27,17 @@ const addRoomateQuery = async (req, res) => {
     }
 }
 
-
-export {
-    addRoomateQuery
+const getRoommatesQuery = async (req, res) => {
+    try {
+        const roommatesJson = await JSON.parse(
+            fs.readFileSync("./data/roommates.json", "utf-8")
+        );
+        return roommatesJson
+    } catch (error) {
+        console.log(error);
+        
+    }
 }
+
+
+export { addRoomateQuery, getRoommatesQuery };

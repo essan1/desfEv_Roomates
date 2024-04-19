@@ -1,6 +1,11 @@
 import express from "express";
 //import controllers
-import { home, addRoommate} from "../controllers/roommateController.js"
+import {
+  home,
+  addRoommate,
+  getRoomates,
+} from "../controllers/roommateController.js";
+import { get } from "http";
 const router = express.Router();
 
 //home
@@ -8,7 +13,7 @@ router.get("/", home);
 
 //roommate
 router.get("/roommate", addRoommate)
-
+router.get("/roommates", getRoomates)
 
 
 //ruta generica
