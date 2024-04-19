@@ -1,10 +1,13 @@
 import express from "express";
 //import controllers
-import { home } from "../controllers/roommateController.js"
+import { home, addRoommate} from "../controllers/roommateController.js"
 const router = express.Router();
 
 //home
 router.get("/", home);
+
+//roommate
+router.get("/roommate", addRoommate)
 
 
 
