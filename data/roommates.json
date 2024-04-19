@@ -1,5 +1,39 @@
 {
-    "roommates": [
-        
-    ]
+  "roommates": [
+    {
+      "id": "b97543cf",
+      "nombre": "Livia Marie",
+      "email": "livia.marie@example.com",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "af8ead5e",
+      "nombre": "Stanoje Jakovljević",
+      "email": "stanoje.jakovljevic@example.com",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "41e4ae36",
+      "nombre": "Lya Bernard",
+      "email": "lya.bernard@example.com",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "692437e3",
+      "nombre": "Rachit Dawangave",
+      "email": "rachit.dawangave@example.com",
+      "debe": 0,
+      "recibe": 0
+    },
+    {
+      "id": "f40bc6d4",
+      "nombre": "Emily Garcia",
+      "email": "emily.garcia@example.com",
+      "debe": 0,
+      "recibe": 0
+    }
+  ]
 }

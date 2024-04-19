@@ -10,8 +10,8 @@ const home = (req, res) => {
 
 const addRoommate = async (req, res) => {
     try {
-        const res = await addRoomateQuery();
-        res.json(res)
+        await addRoomateQuery();
+        res.send('Roommate added')
     } catch (error) {
         console.log(error);
         
